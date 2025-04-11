@@ -267,7 +267,7 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--primary-500);
+  color: var(--primary-400);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
@@ -275,7 +275,6 @@ nav {
 }
 .nav-toggle:hover {
   color: var(--primary-700);
-  transform: rotate(90deg);
 }
 .logo {
   height: 40px;
@@ -283,6 +282,7 @@ nav {
 .links a {
   color: var(--grey-700);
   font-size: 1rem;
+  font-weight: 500;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
   display: block;
@@ -292,7 +292,7 @@ nav {
 
 .links a:hover {
   background: var(--primary-100);
-  color: var(--primary-500);
+  color: var(--primary-700);
   padding-left: 1.5rem;
 }
 
@@ -342,10 +342,10 @@ nav {
     gap: 0.5rem;
   }
   .social-icons a {
-    color: var(--primary-500);
+    color: var(--primary-400);
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--primary-300);
+    color: var(--primary-700);
   }
 }
