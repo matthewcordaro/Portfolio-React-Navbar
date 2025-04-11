@@ -16,22 +16,24 @@ function Navbar() {
             <FaBars />
           </button>
         </div>
-        {showLinks && (
-          <div className='links-container'>
-            <ul className='links'>
-              {links.map((link) => {
-                const { id, url, text } = link
-                return (
-                  <li key={id}>
-                    <a href={url} alt={text}>
-                      {text}
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        )}
+        <div
+          className={
+            showLinks ? "links-container" : "links-container hide-container"
+          }
+        >
+          <ul className='links'>
+            {links.map((link) => {
+              const { id, url, text } = link
+              return (
+                <li key={id}>
+                  <a href={url} alt={text}>
+                    {text}
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   )
