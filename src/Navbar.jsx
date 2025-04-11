@@ -2,6 +2,7 @@ import { useState, useRef } from "react"
 import { FaBars } from "react-icons/fa6"
 import { links, social } from "./data"
 import logo from "./assets/mc-logo.svg"
+
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false)
   const linksContainerRef = useRef(null)
@@ -44,6 +45,16 @@ function Navbar() {
             })}
           </ul>
         </div>
+        <ul className='social-icons'>
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon
+            return (
+              <li key={id}>
+                <a href={url}>{icon}</a>
+              </li>
+            )
+          })}
+        </ul>
       </div>
     </nav>
   )
